@@ -127,67 +127,74 @@ Explicit exclusions. Anti-features from research belong here with reasoning to p
 
 ## Traceability
 
-Empty initially; populated during roadmap creation.
-
 | Requirement | Phase | Status |
-|-------------|-------|--------|
-| API-01      | TBD   | Pending |
-| API-02      | TBD   | Pending |
-| API-03      | TBD   | Pending |
-| API-04      | TBD   | Pending |
-| API-05      | TBD   | Pending |
-| API-06      | TBD   | Pending |
-| API-07      | TBD   | Pending |
-| NATIVE-01   | TBD   | Pending |
-| NATIVE-02   | TBD   | Pending |
-| NATIVE-03   | TBD   | Pending |
-| NATIVE-04   | TBD   | Pending |
-| NATIVE-05   | TBD   | Pending |
-| NATIVE-06   | TBD   | Pending |
-| NATIVE-07   | TBD   | Pending |
-| NATIVE-08   | TBD   | Pending |
-| NATIVE-09   | TBD   | Pending |
-| BUILD-01    | TBD   | Pending |
-| BUILD-02    | TBD   | Pending |
-| BUILD-03    | TBD   | Pending |
-| BUILD-04    | TBD   | Pending |
-| BUILD-05    | TBD   | Pending |
-| BUILD-06    | TBD   | Pending |
-| BUILD-07    | TBD   | Pending |
-| BUILD-08    | TBD   | Pending |
-| QA-01       | TBD   | Pending |
-| QA-02       | TBD   | Pending |
-| QA-03       | TBD   | Pending |
-| QA-04       | TBD   | Pending |
-| QA-05       | TBD   | Pending |
-| QA-06       | TBD   | Pending |
-| QA-07       | TBD   | Pending |
-| QA-08       | TBD   | Pending |
-| CI-01       | TBD   | Pending |
-| CI-02       | TBD   | Pending |
-| CI-03       | TBD   | Pending |
-| CI-04       | TBD   | Pending |
-| CI-05       | TBD   | Pending |
-| CI-06       | TBD   | Pending |
-| EX-01       | TBD   | Pending |
-| EX-02       | TBD   | Pending |
-| EX-03       | TBD   | Pending |
-| EX-04       | TBD   | Pending |
-| DOC-01      | TBD   | Pending |
-| DOC-02      | TBD   | Pending |
-| DOC-03      | TBD   | Pending |
-| DOC-04      | TBD   | Pending |
-| DOC-05      | TBD   | Pending |
-| DOC-06      | TBD   | Pending |
-| REL-01      | TBD   | Pending |
-| REL-02      | TBD   | Pending |
-| REL-03      | TBD   | Pending |
+|-------------|-------|---------|
+| API-01      | 3     | Pending |
+| API-02      | 3     | Pending |
+| API-03      | 3     | Pending |
+| API-04      | 3     | Pending |
+| API-05      | 5     | Pending |
+| API-06      | 5     | Pending |
+| API-07      | 5     | Pending |
+| NATIVE-01   | 2     | Pending |
+| NATIVE-02   | 2     | Pending |
+| NATIVE-03   | 2     | Pending |
+| NATIVE-04   | 3     | Pending |
+| NATIVE-05   | 3     | Pending |
+| NATIVE-06   | 3     | Pending |
+| NATIVE-07   | 3     | Pending |
+| NATIVE-08   | 3     | Pending |
+| NATIVE-09   | 3     | Pending |
+| BUILD-01    | 1     | Pending |
+| BUILD-02    | 1     | Pending |
+| BUILD-03    | 1     | Pending |
+| BUILD-04    | 1     | Pending |
+| BUILD-05    | 1     | Pending |
+| BUILD-06    | 4     | Pending |
+| BUILD-07    | 1     | Pending |
+| BUILD-08    | 4     | Pending |
+| QA-01       | 2     | Pending |
+| QA-02       | 2     | Pending |
+| QA-03       | 5     | Pending |
+| QA-04       | 1     | Pending |
+| QA-05       | 5     | Pending |
+| QA-06       | 1     | Pending |
+| QA-07       | 5     | Pending |
+| QA-08       | 2     | Pending |
+| CI-01       | 7     | Pending |
+| CI-02       | 7     | Pending |
+| CI-03       | 7     | Pending |
+| CI-04       | 7     | Pending |
+| CI-05       | 7     | Pending |
+| CI-06       | 7     | Pending |
+| EX-01       | 6     | Pending |
+| EX-02       | 6     | Pending |
+| EX-03       | 6     | Pending |
+| EX-04       | 6     | Pending |
+| DOC-01      | 7     | Pending |
+| DOC-02      | 6     | Pending |
+| DOC-03      | 7     | Pending |
+| DOC-04      | 7     | Pending |
+| DOC-05      | 7     | Pending |
+| DOC-06      | 7     | Pending |
+| REL-01      | 7     | Pending |
+| REL-02      | 7     | Pending |
+| REL-03      | 7     | Pending |
 
 **Coverage:**
-- v0.1 requirements: 50 total
-- Mapped to phases: 0 (filled by roadmap)
-- Unmapped: 50 ⚠️ (resolves when roadmap is created)
+- v0.1 requirements: 51 total (7 API + 9 NATIVE + 8 BUILD + 8 QA + 6 CI + 4 EX + 6 DOC + 3 REL)
+- Mapped to phases: 51 ✓
+- Unmapped: 0
+
+**Phase distribution:**
+- Phase 1 (Scaffold + ratify): 8 requirements (BUILD-01,02,03,04,05,07; QA-04,06)
+- Phase 2 (Generator core + tests): 6 requirements (NATIVE-01,02,03; QA-01,02,08)
+- Phase 3 (JSI bindings + install + errors): 10 requirements (API-01,02,03,04; NATIVE-04,05,06,07,08,09)
+- Phase 4 (iOS + Android native glue): 2 requirements (BUILD-06,08)
+- Phase 5 (TS API + worklet runtime install): 6 requirements (API-05,06,07; QA-03,05,07)
+- Phase 6 (Example app + benchmarks): 5 requirements (EX-01,02,03,04; DOC-02)
+- Phase 7 (CI + docs + release): 14 requirements (CI-01..06; DOC-01,03,04,05,06; REL-01,02,03)
 
 ---
 *Requirements defined: 2026-05-04*
-*Last updated: 2026-05-04 after initial definition*
+*Last updated: 2026-05-04 — traceability populated by roadmap creation (51/51 mapped)*
